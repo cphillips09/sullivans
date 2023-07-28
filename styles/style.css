@@ -28,6 +28,7 @@ html {
 body {
 	height: 100vh;
 	height: 100svh;
+	background-color: hsl(0,0%,7%);
 }
 
 img, picture, svg, video {
