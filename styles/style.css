@@ -87,14 +87,18 @@ footer {
 
 .card {
     flex: 0 1 450px;
-    text-align: center;
-    font-family: 'Overpass', sans-serif;
-    font-size: var(--step-2);
-    color: hsl(0,0%,90%);
-    background-color: hsl(0,0%,20%);
     border: 1px solid hsl(0,0%,20%);
     margin-bottom: 2rem;
     border-radius: 3px;
+}
+
+.card p {
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: var(--step-2);
+    padding-block: .5rem;
+    color: hsl(0,0%,90%);
+    background-color: hsl(0,0%,20%);
 }
 
 .question {
