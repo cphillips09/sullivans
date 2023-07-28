@@ -65,7 +65,8 @@ h1 {
 main {
 	width: min(925px, 100%);
 	margin-inline: auto;
-    font-family: 'Overpass', sans-serif;
+	font-family: 'Overpass', sans-serif;
+	background-color: hsl(0,0%,7%);
 }
 
 footer {
