@@ -1,4 +1,9 @@
-/* @link https://utopia.fyi/type/calculator/?c=360,16,1.125,900,20,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator/?c=360,16,1.125,900,20,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 
+font-family: 'Audiowide', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
 :root {
     --step--2: clamp(0.72rem, calc(0.84rem + -0.21vw), 0.79rem);
     --step--1: clamp(0.89rem, calc(0.88rem + 0.03vw), 0.90rem);
@@ -12,7 +17,7 @@
 }
 
 *, *::before, *::after {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
@@ -28,7 +33,7 @@ html {
 body {
 	height: 100vh;
 	height: 100svh;
-	background-color: hsl(0,0%,7%);
+    background-color: hsl(0,0%,7%);
 }
 
 img, picture, svg, video {
@@ -37,8 +42,9 @@ img, picture, svg, video {
 }
 
 header {
-    min-height: 30vh;
-    padding-inline: 3rem;
+    position: relative;
+    padding-block: 2rem;
+    padding-inline: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,22 +58,15 @@ header {
 }
 
 h1 {
-    color: hsl(0, 0%, 10%);
-    font-family: 'Permanent Marker', cursive;
-    font-size: var(--step-5);
-    letter-spacing: 0.5rem;
-}
-
-.largeletter {
-    color: black;
-    font-size: var(--step-6);
+    position: absolute;
+    left: -10000px;
 }
 
 main {
 	width: min(925px, 100%);
 	margin-inline: auto;
-	font-family: 'Overpass', sans-serif;
-	background-color: hsl(0,0%,7%);
+    font-family: Helvetica, sans-serif;
+    background-color: hsl(0,0%,7%);
 }
 
 footer {
@@ -76,7 +75,7 @@ footer {
     color: hsl(0,0%,85%);
     font-size: var(--step--2);
     padding-block: 0.75rem;
-    font-family: 'Overpass', sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 #beforeafter {
@@ -94,8 +93,9 @@ footer {
 
 .card p {
     text-align: center;
-    font-family: 'Overpass', sans-serif;
-    font-size: var(--step-2);
+    font-family: Helvetica, sans-serif;
+    font-size: var(--step-3);
+    letter-spacing: .2rem;
     padding-block: .5rem;
     color: hsl(0,0%,90%);
     background-color: hsl(0,0%,20%);
@@ -109,7 +109,7 @@ footer {
     border-radius: 3px 3px 0 0;
     border-bottom: 2px solid hsl(0,0%,30%);
     text-transform: capitalize;
-    letter-spacing: .1rem;
+    letter-spacing: .2rem;
 }
 
 .answer {
@@ -130,11 +130,12 @@ footer {
     align-items: center;
     margin-bottom: 3rem;
     font-size: var(--step-2);
+    letter-spacing: .1rem;
 }
 
 a {
     text-decoration: none;
-    color: hsl(0,0%,90%);
+    color: hsl(0,0%,100%);
     padding-block: 1rem;
 }
 
@@ -159,24 +160,24 @@ textarea {
 }
 
 button {
-    padding: 10px;
+    padding: 12px;
     width: 160px;
     margin-inline: auto;
     margin-bottom: 2.5rem;
-    font-size: var(--step-2);
+    font-size: var(--step-1);
     font-weight: 700;
-    color: hsl(0,0%,5%);
-    background-color: hsl(0,0%,100%);
+    color: hsl(0,0%,95%);
+    background-color: hsl(102,93%,27%);
     border: none;
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: hsl(0,0%,90%);
+    background-color: hsl(102,93%,24%);
     box-shadow: inset 0px 0px 4px black;
 }
 
 button:active {
-    color: hsl(0,0%,90%);
-    background-color: hsl(0,0%,10%);
+    color: hsl(0,0%,85%);
+    background-color: hsl(102,93%,10%);
 }
